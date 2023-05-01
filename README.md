@@ -1,9 +1,2 @@
-# School Management System
-This a a school management system for primary schools and colleges.
-# schoolms
-# schoolms
-# schoolms
-# schoolms
-# schoolms
-# schoolms
-# schoolms
+# Examination Timetable Scheduling System `(EttS)`
+This repo houses the MSc. project I did at Covenant University, Ota, Nigeria.
