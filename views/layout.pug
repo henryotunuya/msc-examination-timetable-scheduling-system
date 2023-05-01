@@ -1,0 +1,15 @@
+doctype html
+html
+    head
+        title #{title} - Examination Timetabling System
+        block styles
+            link(rel="icon", type="image/png", href="/images/favicon.png")
+            link(rel='stylesheet',type='text/css', href='/stylesheets/style.css')
+            link(rel = 'stylesheet', type = 'text/css', href = '/stylesheets/font-awesome-4.7.0/css/font-awesome.css')
+
+    body
+        include ../public/navigation.html
+        //- template inheritance used
+        block content
+        
+        block javascripts

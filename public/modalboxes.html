@@ -1,0 +1,852 @@
+<div class="modal" id="viewstudent_modal">
+    <!-- Modal Content -->
+    <div class="modal_content" id="viewstudent_modal_content">
+        <span>
+            <h3 class="modal_close"> &times; </h3>
+        </span>
+        <div class="querybox mrg_top_2em">
+            <form id="formstudentquery" method="POST" action="">
+                <label for="class"><span class="input-text">Programme</span></label>
+                <input type="text" id="studentprogram" name="studentprogram" class="input-field" />
+                <label for="class"><span class="input-text">Year</span></label>
+                <input type="text" id="studentyear" name="studentyear" class="input-field" />
+                <label for="student year admitted"><span class="input-text">Year admitted</span></label>
+                <select id="studentyearadmitted" name="studentyearadmitted" class="input-field">
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                </select>
+                <button type="submit" class="bttn querybtn">Query</button>
+            </form>
+        </div>
+        <p class="feedback display_none"><span class="feedback_close"> &times;</span></p>
+        <table cellspacing="2" border='1'>
+            <thead>
+                <tr>
+                    <th>Sn</th>
+                    <th>Matric no</th>
+                    <th>First name</th>
+                    <th>Middle name</th>
+                    <th>Last name</th>
+                    <th>Gender</th>
+                    <th>Year</th>
+                    <th>Programme</th>
+                    <th>Year admitted</th>
+                </tr>
+            </thead>
+            <tbody class="queryresult">
+
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+        </table>
+    </div>
+</div>
+
+<!-- Begin Result view modalbox  -->
+<div class="modal" id="viewuploadedresult_modal">
+    <!-- Modal Content -->
+    <div class="modal_content" id="viewuploadedresult_modal_content">
+        <span>
+            <h3 class="modal_close"> &times; </h3>
+        </span>
+        <div class="querybox mrg_top_2em">
+            <form id="formsresultquery" method="POST" action="">
+                <label for="Department"><span class="input-text in-take-30p">Department</span></label>
+                <select id="resultdepartment" name="resultdepartment" class="input-field">
+                    <option>CIS</option>
+                </select>
+                <label for="Year"><span class="input-text in-take-30p">Year</span></label>
+                <select id="resultyear" name="resultyear" class="input-field">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+
+                </select>
+                <label for="Semester"><span class="input-text in-take-30p">Semester</span></label>
+                <select id="resultsemeste" name="resulsemester" class="input-field">
+                    <option>Alpha</option>
+                    <option>Omega</option>
+                </select>
+                <button type="submit" class="bttn querybtn">Query</button>
+            </form>
+        </div>
+        <p class="feedback display_none"><span class="feedback_close"> &times;</span></p>
+        <table cellspacing="2" border='1'>
+            <thead>
+                <tr>
+                    <th>Sn</th>
+                    <th>Matric no</th>
+                    <th>Course code</th>
+                    <th>CA score</th>
+                    <th>Exam score</th>
+                    <th>Course grade</th>
+                    <th>Total score</th>
+                </tr>
+            </thead>
+            <tbody class="queryresult">
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+<!-- End Staff view modalbox -->
+
+<!-- Begin Add Exam Hall view modalbox  -->
+<div class="modal" id="addnewexamhall_modal">
+    <!-- Modal Content -->
+    <div class="modal_content" id="addnewexamhall_modal_content">
+        <span>
+            <h3 class="modal_close"> &times; </h3>
+        </span>
+        <p class="heading md">Add Examination Hall</p>
+        <p class="feedback display_none"><span class="feedback_close"> &times;</span></p>
+        <div>
+            <form id="formaddexamhall" method="POST" action="">
+                <p>
+                    <label class="reglbl" for="hall abbreviation">Abbreviation:</label>
+                    <input type="text" id="hallabbr" name="hallabbr" class="input-field in-take-50p" />
+                </p>
+                <p>
+                    <label class="reglbl" for="hall name">Name:</label>
+                    <input type="text" id="hallname" name="hallname" class="input-field in-take-70p" />
+                </p>
+                <p>
+                    <label class="reglbl" for="hall college">College:</label>
+                    <input type="text" id="hallcollege" name="hallcollege" class="input-field in-take-50p" />
+                </p>
+                <p>
+                    <label class="reglbl" for="hall location">Location:</label>
+                    <input type="text" id="halllocation" name="halllocation" class="input-field in-take-70p" />
+                </p>
+                <p>
+                    <label class="reglbl" for="hall capacity">Capacity:</label>
+                    <input type="number" id="hallcapacity" name="hallcapacity" class="input-field in-take-30p" />
+                </p>
+                <button type="submit" class="bttn in-take-100p uploadbtn mrg_top_2em">Add</button>
+
+            </form>
+        </div>
+    </div>
+</div>
+<!-- End Add Exam Hall view modalbox  -->
+
+<!-- Begin College view modalbox  -->
+<div class="modal" id="viewcollege_modal">
+    <!-- Modal Content -->
+    <div class="modal_content" id="viewcollege_modal_content">
+        <span>
+            <h3 class="modal_close"> &times; </h3>
+        </span>
+        <p class="heading md">View College</p>
+        <div class="querybox mrg_top_2em">
+            <form id="formcollegequery" method="POST" action="">
+                <button type="submit" class="bttn querybtn">Query</button>
+            </form>
+        </div>
+        <p class="feedback display_none"><span class="feedback_close"> &times;</span></p>
+        <table cellspacing="2" border='1'>
+            <thead>
+                <tr>
+                    <th>Sn</th>
+                    <th>College abbr.</th>
+                    <th>College name</th>
+                </tr>
+            </thead>
+            <tbody class="queryresult">
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+<!-- End College View modalbox -->
+
+<!-- Begin Department Class view modalbox  -->
+<div class="modal" id="viewdepartment_modal">
+    <!-- Modal Content -->
+    <div class="modal_content" id="viewdepartment_modal_content">
+        <span>
+            <h3 class="modal_close"> &times; </h3>
+        </span>
+        <p class="heading md">View Department</p>
+        <div class="querybox mrg_top_2em">
+            <form id="formdepartmentquery" method="POST" action="">
+                <label for="session"><span class="input-text in-take-30p">College</span></label>
+                <input type="text" id="departmentcollege" name="departmentcollege" class="input-field" />
+                <button type="submit" class="bttn querybtn">Query</button>
+            </form>
+        </div>
+        <p class="feedback display_none"><span class="feedback_close"> &times;</span></p>
+        <table cellspacing="2" border='1'>
+            <thead>
+                <tr>
+                    <th>Sn</th>
+                    <th>Abbr.</th>
+                    <th>Department name</th>
+                    <th>College</th>
+                </tr>
+            </thead>
+            <tbody class="queryresult">
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+<!-- End Class Department modalbox -->
+
+<!-- Begin Program view modalbox  -->
+<div class="modal" id="viewprogram_modal">
+    <!-- Modal Content -->
+    <div class="modal_content" id="viewprogram_modal_content">
+        <span>
+            <h3 class="modal_close"> &times; </h3>
+        </span>
+        <p class="heading md">View Programme</p>
+        <div class="querybox mrg_top_2em">
+            <form id="formprogramquery" method="POST" action="">
+                <label for="class"><span class="input-text in-take-30p">Department</span></label>
+                <input type="text" id="programdepartment" name="programdepartment" class="input-field" />
+                <button type="submit" class="bttn querybtn">Query</button>
+            </form>
+        </div>
+        <p class="feedback display_none"><span class="feedback_close"> &times;</span></p>
+        <table cellspacing="2" border='1'>
+            <thead>
+                <tr>
+                    <th>Sn</th>
+                    <th>Programme code</th>
+                    <th>Programme name</th>
+                    <th>Department</th>
+                </tr>
+            </thead>
+            <tbody class="queryresult">
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+<!-- End Program View modalbox -->
+
+
+<!-- Begin Course view modalbox  -->
+<div class="modal" id="viewcourse_modal">
+    <!-- Modal Content -->
+    <div class="modal_content" id="viewcourse_modal_content">
+        <span>
+            <h3 class="modal_close"> &times; </h3>
+        </span>
+        <p class="heading md">View Course</p>
+        <div class="querybox mrg_top_2em">
+            <form id="formcoursequery" method="POST" action="">
+                <label for="program"><span class="input-text in-take-30p">Programme</span></label>
+                <input type="text" id="courseprogram" name="courseprogram" class="input-field" />
+                <label for="year"><span class="input-text in-take-30p">Year</span></label>
+                <input type="text" id="courseyear" name="courseyear" class="input-field" />
+                <button type="submit" class="bttn querybtn">Query</button>
+            </form>
+        </div>
+        <p class="feedback display_none"><span class="feedback_close"> &times;</span></p>
+        <table cellspacing="2" border='1'>
+            <thead>
+                <tr>
+                    <th>Sn</th>
+                    <th>Course code</th>
+                    <th>Course title</th>
+                    <th>Course credit unit</th>
+                    <th>Course semester</th>
+                    <th>Course year</th>
+                    <th>Course programme</th>
+                </tr>
+            </thead>
+            <tbody class="queryresult">
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+<!-- End Course View modalbox -->
+
+
+<!----        Begin SMS modal box       ---->
+<div class="modal" id="sms_modal">
+    <!-- Modal Content -->
+    <div class="modal_content" id="sms_modal_content">
+        <span>
+            <h3 class="modal_close"> &times; </h3>
+        </span>
+        <div class="sms_wrapper">
+            <div class="recepient_list">
+                <h4>Recepient list:</h4>
+                dr
+            </div>
+            <form>
+                <p>
+                    <label class="lbl" for="recepient">Recepient:</label><br />
+                    <input class="input-field in-take-30p" type="text" placeholder="Recepient no" />
+                </p>
+                <p>
+                    <label class="lbl" for="recepient">Message:</label><br />
+                    <textarea class="input-field in-take-50p textarea-height" placeholder="Enter message"></textarea>
+                </p>
+                <button class="bttn in-take-100p">Send SMS</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!----        End SMS modal box       ---->
+
+<!----        Begin upload course list modal box       ---->
+<div class="modal" id="uploadcourselist_modal">
+    <!-- Modal Content -->
+    <div class="modal_content" id="uploadcourselist_modal_content">
+        <span>
+            <h3 class="modal_close"> &times; </h3>
+        </span>
+        <p class="heading md">Upload Course List</p>
+        <p class="feedback display_none"><span class="feedback_close"> &times;</span></p>
+        <form id="formuploadcourselist" method="POST" enctype="multipart/form-data" action="">
+
+            <p>
+                <label class="reglbl" for="course program">Programme:</label>
+                <input type="text" id="courseprogram" name="courseprogram" class="input-field in-take-40p" />
+
+            </p>
+            <p>
+                <label class="reglbl" for="course year">Year:</label>
+                <select id="courseyear" name="courseyear" class="input-field in-take-40p">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+
+            </p>
+            <p>
+                <label class="reglbl" for="course semester">Semester:</label>
+                <select id="coursesemester" name="coursesemester" class="input-field in-take-30p">
+                    <option>Alpha</option>
+                    <option>Omega</option>
+                </select>
+            </p>
+            <p>
+                <label class="reglbl" for="file">Select csv file:</label>
+                <input type="file" id="csvuploadfile" name="csvuploadfile" accept=".csv" required />
+            </p><br>
+            <a href='../images/courseuploadstructure.png' target='_blank'>Click to view file format</a>
+            <button type="submit" class="bttn in-take-100p uploadbtn mrg_top_2em">Upload</button>
+        </form>
+    </div>
+</div>
+<!----        End upload course modal box       ---->
+
+<!----        Begin upload student result modal box       ---->
+<div class="modal" id="uploadresult_modal">
+    <!-- Modal Content -->
+    <div class="modal_content" id="uploadresult_modal_content">
+        <span>
+            <h3 class="modal_close"> &times; </h3>
+        </span>
+        <p class="heading md">Upload Student Result</p>
+        <p class="feedback display_none"><span class="feedback_close"> &times;</span></p>
+        <form id="formuploadresult" method="POST" enctype="multipart/form-data" action="">
+            <p>
+                <label class="reglbl" for="course">Course:</label>
+                <input type="text" class="input-field in-take-40p" id="resultcourse" name="resultcourse" />
+            </p>
+            <p>
+                <label class="reglbl" for="Program">Programme:</label>
+                <input type="text" id="resultprogram" name="resultprogram" class="input-field in-take-40p" />
+            </p>
+            <p>
+                <label class="reglbl" for="semester">Semester:</label>
+                <select id="coursesemester" name="coursesemester" class="input-field in-take-30p">
+                    <option value="Alpha">Alpha</option>
+                    <option value="Omega">Omega</option>
+                </select>
+            </p>
+            <p>
+                <label class="reglbl" for="session">Session:</label>
+                <select id="resultyear" name="resultyear" class="input-field in-take-40p">
+                    <option value="2019">2019/2020</option>
+                    <option value="2020">2020/2021</option>
+                    <option value="2021">2021/2022</option>
+                    <option value="2022">2022/2023</option>
+                    <option value="2023">2023/2024</option>
+                </select>
+            </p>
+            <p>
+                <label class="reglbl" for="file">Select csv file:</label>
+                <input type="file" id="csvuploadfile" name="csvuploadfile" accept=".csv" required />
+            </p><br>
+            <a href='../images/examresultuploadstructure.png' target='_blank'>Click to view file format</a>
+            
+            <button type="submit" class="bttn in-take-100p uploadbtn mrg_top_2em">Upload</button>
+
+        </form>
+    </div>
+</div>
+<!----        End upload student result modal box       ---->
+
+<!----        Begin 'Add course' modal box       ---->
+<div class="modal" id="addcourse_modal">
+    <!-- Modal Content -->
+    <div class="modal_content" id="addcourse_modal_content">
+        <span>
+            <h3 class="modal_close"> &times; </h3>
+        </span>
+        <p class="heading md">Add course</p>
+        <p class="feedback display_none"><span class="feedback_close"> &times;</span></p>
+        <form id="formaddcourse" method="POST">
+            <p>
+                <label class="reglbl" for="cours title">Course title:</label>
+                <input type="text" id="coursetitle" name="coursetitle" class="input-field in-take-70p" />
+            </p>
+            <p>
+                <label class="reglbl" for="course code">Course code:</label>
+                <input type="text" id="coursecode" name="coursecode" class="input-field in-take-40p" />
+            </p>
+            <p>
+                <label class="reglbl" for="departmenttc">Department teaching course:</label>
+                <input type="text" id="departmenttc" name="departmenttc" class="input-field in-take-40p" />
+            </p>
+            <p>
+                <label class="reglbl" for="credit unit">Credit unit:</label>
+                <input type="number" id="creditunit" name="creditunit" class="input-field in-take-40p" />
+            </p>
+            <p>
+                <label class="reglbl" for="course level">Course level:</label>
+                <select id="courselevel" name="courselevel" class="input-field in-take-40p">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                </select>
+            </p>
+            <p>
+                <label class="reglbl" for="course semester">Course semester:</label>
+                <select id="coursesemester" name="coursesemester" class="input-field in-take-40p">
+                    <option>1st</option>
+                    <option>2nd</option>
+                </select>
+            </p>
+
+            <p>
+                <label class="reglbl" for="course description">Course description:</label>
+                <textarea id="coursedescription" name="coursedescription" class="input-field in-take-100p"></textarea>
+            </p>
+            <button type="submit" class="bttn in-take-100p uploadbtn mrg_top_2em">Add</button>
+        </form>
+    </div>
+</div>
+<!----        End 'Add course' modal box       ---->
+
+<!----        Begin 'Add college' modal box       ---->
+<div class="modal" id="addcollege_modal">
+    <!-- Modal Content -->
+    <div class="modal_content" id="addcollege_modal_content">
+        <span>
+            <h3 class="modal_close"> &times; </h3>
+        </span>
+        <p class="heading md">Add College</p>
+        <p class="feedback display_none"><span class="feedback_close"> &times;</span></p>
+        <form id="formaddcollege" method="POST">
+            <p>
+                <label class="reglbl" for="college abbreviation">Abbreviation:</label>
+                <input type="text" id="collegeabbr" name="collegeabbr" class="input-field in-take-30p" />
+            </p>
+            <p>
+                <label class="reglbl" for="college name">Name:</label>
+                <input type="text" id="collegename" name="collegename" class="input-field in-take-70p" />
+            </p>
+            <button type="submit" class="bttn in-take-100p uploadbtn mrg_top_2em">Add</button>
+        </form>
+    </div>
+</div>
+<!----        End 'Add college' modal box       ---->
+
+<!----        Begin 'Add department' modal box       ---->
+<div class="modal" id="adddept_modal">
+    <!-- Modal Content -->
+    <div class="modal_content" id="adddept_modal_content">
+        <span>
+            <h3 class="modal_close"> &times; </h3>
+        </span>
+        <p class="heading md">Add Department</p>
+        <p class="feedback display_none"><span class="feedback_close"> &times;</span></p>
+        <form id="formadddepartment" method="POST">
+            <p>
+            <p>
+                <label class="reglbl" for="department abbr">Abbreviation:</label>
+                <input type="text" id="departmentabbr" name="departmentabbr" class="input-field in-take-40p" />
+            </p>
+            <label class="reglbl" for="department name">Name:</label>
+            <input type="text" id="departmentname" name="departmentname" class="input-field in-take-70p" />
+            </p>
+            <p>
+                <label class="reglbl" for="department college">College:</label>
+                <input type="text" name="departmentcollege" id="departmentcollege" class='input-field in-take-40p'
+                    autocomplete='off' />
+            </p>
+            <button type="submit" class="bttn in-take-100p uploadbtn mrg_top_2em">Add</button>
+        </form>
+    </div>
+</div>
+<!----        End 'Add department' modal box       ---->
+
+<!----        Begin 'Add program' modal box       ---->
+<div class="modal" id="addprogram_modal">
+    <!-- Modal Content -->
+    <div class="modal_content" id="addprogram_modal_content">
+        <span>
+            <h3 class="modal_close"> &times; </h3>
+        </span>
+        <p class="heading md">Add Programme</p>
+        <p class="feedback display_none"><span class="feedback_close"> &times;</span></p>
+        <form id="formaddprogram" method="POST">
+            <p>
+                <label class="reglbl" for="program abbr">Abbreviation:</label>
+                <input type="text" id="programabbr" name="programabbr" class="input-field in-take-40p" />
+            </p>
+            <p>
+                <label class="reglbl" for="program name">Name:</label>
+                <input type="text" id="programname" name="programname" class="input-field in-take-70p" />
+            </p>
+            <p>
+                <label class="reglbl" for="program department">Department:</label>
+                <input type="text" id="programdepartment" name="programdepartment" class="input-field in-take-30p" />
+            </p>
+            <button type="submit" class="bttn in-take-100p uploadbtn mrg_top_2em">Add</button>
+        </form>
+    </div>
+</div>
+<!----        End 'Add program' modal box       ---->
+
+<!--  'View Exam Hall' modal box  -->
+<div class="modal" id="viewexamhall_modal">
+    <!-- Modal Content -->
+    <div class="modal_content" id="viewexamhall_content">
+        <span>
+            <h3 class="modal_close"> &times; </h3>
+        </span>
+        <p class="heading md">View Exam Hall</p>
+        <div class="querybox mrg_top_2em">
+            <form id="formexamhallquery" method="POST" action="">
+                <label for="College"><span class="input-text in-take-30p">College</span></label>
+                <input type="text" id="hallcollege" name="hallcollege" class="input-field" />
+                <button type="submit" class="bttn querybtn">Query</button>
+            </form>
+        </div>
+        <p class="feedback display_none"><span class="feedback_close"> &times;</span></p>
+        <table cellspacing="2" border='1'>
+            <thead>
+                <tr>
+                    <th>Sn</th>
+                    <th>Hall code</th>
+                    <th>Hall name</th>
+                    <th>Hall capacity</th>
+                    <th>Hall loction</th>
+                    <th>College</th>
+                </tr>
+            </thead>
+            <tbody class="queryresult">
+
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+        </table>
+    </div>
+</div>
+<!-- End 'View Exam Hall'   -->
+
+<!----        Begin upload student modal box       ---->
+<div class="modal" id="uploadstudent_modal">
+    <!-- Modal Content -->
+    <div class="modal_content" id="uploadstudent_modal_content">
+        <span>
+            <h3 class="modal_close"> &times; </h3>
+        </span>
+        <p class="heading md">Upload Student List</p>
+        <p class="feedback display_none"><span class="feedback_close"> &times;</span></p>
+        <form id="formuploadstdlist" method="POST" enctype="multipart/form-data" action="">
+            <p>
+                <label class="reglbl" for="studentdepartment">Department:</label>
+                <input type="text" id="studentdepartment" name="studentdepartment" class="input-field in-take-40p" />
+            </p>
+            <p>
+                <label class="reglbl" for="studentprogram">Programme:</label>
+                <input type="text" id="studentprogram" name="studentprogram" class="input-field in-take-40p" />
+            </p>
+            <p>
+                <label class="reglbl" for="file">Select csv file:</label>
+                <input type="file" id="csvuploadfile" name="csvuploadfile" accept=".csv" required />
+            </p><br>
+            <a href='../images/studentuploadstructure.png' target='_blank'>Click to view file format</a>
+            
+            <button type="submit" class="bttn in-take-100p uploadbtn mrg_top_2em">Upload</button>
+        </form>
+    </div>
+</div>
+<!----        End upload student modal box       ---->
+
+<!----        Begin 'Set Constraints' modal box       ---->
+<div class="modal" id="setconstraints_modal">
+    <!-- Modal Content -->
+    <div class="modal_content" id="setconstraints_modal_content">
+        <span>
+            <h3 class="modal_close"> &times; </h3>
+        </span>
+        <p class="heading md">Set Timetable Constraints </p>
+        <p class="feedback display_none"><span class="feedback_close"> &times;</span></p>
+        <form id="formsetconstraints" method="POST" action="">
+            <p>
+                <label class="reglbl" for="Set course-to-date">Set course-to-date (CTD):<br>
+                    <small>(Format: Course code, date ~ ex. CSC111, Monday - 2nd Aug 2021)</small></label>
+                <textarea name="coursetodate" class="input-field in-take-40p"></textarea>
+            </p>
+            <p>
+                <label class="reglbl" for="Set course-to-time">Set course-to-time (CTT):<br>
+                    <small>(Format: Course code, time code ~ ex. CSC111, 1)</small></label>
+                <textarea name="coursetotime" class="input-field in-take-40p"></textarea>
+            </p> 
+            <p>
+                <label class="reglbl" for="Set course-to-time">Exclude programme and year for day and time:<br>
+                    <small>(Format: Programme, year, day, time code ~ ex. MIS, 4, Tuesday - 10th Aug 2021, 1)</small></label>
+                <textarea name="excludeprogramme" class="input-field in-take-40p"></textarea>
+            </p>       
+
+            <button type="submit" class="bttn in-take-100p uploadbtn mrg_top_2em">Set constraints</button>
+        </form>
+    </div>
+</div>
+<!----        End 'Set Constraints' modal box       ---->
+
+<!----        Begin 'Set Semester and Creditunit Value' modal box       ---->
+<div class="modal" id="setvalue_modal">
+    <!-- Modal Content -->
+    <div class="modal_content" id="setvalue_modal_content">
+        <span>
+            <h3 class="modal_close"> &times; </h3>
+        </span>
+        <p class="heading md">Set semester and credit unit limit</p>
+        <p class="feedback display_none"><span class="feedback_close"> &times;</span></p>
+        <form id="formsetsemester" method="POST">
+            <p>
+                <label class="reglbl" for="present semester">Present semester:</label>
+                <input type="text" id="presentsemester" name="presentsemester" class="input-field in-take-30p" />
+            </p>
+            <button type="submit" class="bttn in-take-50p uploadbtn mrg_top_2em">Set semester</button>
+        </form>
+        <br>
+        <hr>
+        <form id="formsetcreditunit" method="POST">
+            <p>
+                <label class="reglbl" for="Credit unit limit">Credit unit limit:</label>
+                <input type="text" id="creditunitlimit" name="creditunitlimit" class="input-field in-take-30p" />
+            </p>
+            <button type="submit" class="bttn in-take-50p uploadbtn mrg_top_2em">Set limit</button>
+        </form>
+    </div>
+</div>
+<!----        End 'Set Credit and Semester Value' modal box       ---->
+
+
+<!----        Begin 'Set Exam dates and Durations' modal box       ---->
+<div class="modal" id="setexamdd_modal">
+    <!-- Modal Content -->
+    <div class="modal_content" id="setexamdd_modal_content">
+        <span>
+            <h3 class="modal_close"> &times; </h3>
+        </span>
+        <p class="heading md">Set Examination Dates and Times</p>
+        <p class="feedback display_none"><span class="feedback_close"> &times;</span></p>
+        <form id="formsetexamdateandTime" method="POST">
+            <p>
+                <label class="reglbl" for="Enter exam dates">Enter exam dates:<br>
+                    <small>(Ex. 4th June 2021)</small></label>
+                <textarea name="examdates" class="input-field in-take-50p"></textarea>
+            </p>
+            
+            <p>
+                <label class="reglbl" for="Enter exam durations">Enter exam times:<br>
+                    <small>(Ex. 8am-10am)</small></label>
+                <textarea name="examdurations" class="input-field in-take-50p"></textarea>
+            </p>
+            <button type="submit" class="bttn in-take-50p uploadbtn mrg_top_2em">Set dates and times</button>
+        </form>
+    </div>
+</div>
+<!----        End 'Set Exam date and durations' modal box       ---->
+
+<!----        Begin 'Generate timetable' modal box       ---->
+<div class="modal" id="generatetimetable_modal">
+    <!-- Modal Content -->
+    <div class="modal_content" id="generatetimetable_modal_content">
+        <span>
+            <h3 class="modal_close"> &times; </h3>
+        </span>
+        <p class="heading md">Generate Examination Timetables</small></p>
+        <p class="feedback display_none"><span class="feedback_close"> &times;</span></p>
+        <form id="formnumeroftimetables" method="POST" target="_blank" action="/staff/admin/examtimetable">
+            <p>
+                <label class="reglbl" for="">Enter the number of timetables to generate<br> <small>(Note: Can generate 1 to 100 timetables)</small></label>
+                <br>
+                <input type="number" name="numberoftimetables" class="input-field in-take-30p"/>
+            </p>
+            
+            <button type="submit" class="bttn in-take-50p uploadbtn mrg_top_2em">Generate</button>
+        </form>
+    </div>
+</div>
+<!----        End 'Generate timetable' modal box       ---->
+
+<!----        Begin 'View timetable' modal box       ---->
+<div class="modal" id="viewtimetable_modal">
+    <!-- Modal Content -->
+    <div class="modal_content" id="viewtimetable_modal_content">
+        <span>
+            <h3 class="modal_close"> &times; </h3>
+        </span>
+        <p class="heading md">View Approved Exam Timetable</small></p>
+        <p class="feedback display_none"><span class="feedback_close"> &times;</span></p>
+        
+        <form action="admin/viewexamtimetable" method="POST" target="_blank">            
+            
+            <button type="submit" class="bttn in-take-100p deletebtn mrg_top_2em">View</button>
+        </form>
+    </div>
+</div>
+<!----        End 'View timetable' modal box       ---->
+
+
+<!----        Begin 'std View timetable' modal box       ---->
+<div class="modal" id="std_viewtimetable_modal">
+    <!-- Modal Content -->
+    <div class="modal_content" id="std_viewtimetable_modal_content">
+        <span>
+            <h3 class="modal_close"> &times; </h3>
+        </span>
+        <p class="heading md">View Examination Timetable</small></p>
+        <p class="feedback display_none"><span class="feedback_close"> &times;</span></p>
+        
+        <form action="profile/examtimetable" method="POST" target="_blank">            
+            
+            <button type="submit" class="bttn in-take-100p uploadbtn mrg_top_2em">View</button>
+        </form>
+    </div>
+</div>
+<!----        End 'std View timetable' modal box       ---->
+
+<!-- ############################################################################## -->
+
+<!-------- For the Student Profile page -------->
+<!-- Begin std Course view modalbox  -->
+<div class="modal" id="std_viewcourselist_modal">
+    <!-- Modal Content -->
+    <div class="modal_content" id="std_viewcourselist_modal_content">
+        <span>
+            <h3 class="modal_close"> &times; </h3>
+        </span>
+        <p class="heading md">Register Course</p>
+        <div class="querybox mrg_top_2em">
+            <form id="formstdcoursequery" method="POST" action="">
+                <button type="submit" class="bttn uploadbtn">Get my courses</button>
+            </form>
+        </div>
+        <p class="feedback display_none"><span class="feedback_close"> &times;</span></p>
+        <h4>Total units registered: <span id='registeredunits_lbl'> 0 </span> of <span id='totalunits_db'>0</span> </h4>
+        <table cellspacing="2" border='1'>
+            <tr>
+                <th>Sn</th>
+                <th>Course code</th>
+                <th>Course title</th>
+                <th>Course credit unit</th>
+                <th>Course semester</th>
+                <th>Course year</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody class="queryresult">
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+<!-- End std Course View modalbox -->
+
+
+<!-- Begin 'std Course results' modalbox  -->
+<div class="modal" id="std_viewcourseresult_modal">
+    <!-- Modal Content -->
+    <div class="modal_content" id="std_viewcourseresult_modal_content">
+        <span>
+            <h3 class="modal_close"> &times; </h3>
+        </span>
+        <p class="heading md">View my results</p>
+        <div class="querybox mrg_top_2em">
+            <form id="formstdcourseresultquery" name="formstdcourseresultquery" method="POST">
+                <button type="submit" class="bttn uploadbtn">Get my results</button>
+            </form>
+        </div>
+        <p class="feedback display_none"><span class="feedback_close"> &times;</span></p>
+        <table cellspacing="2" border='1'>
+            <tr>
+                <th>Sn</th>
+                <th>Course code</th>
+                <th>CA score</th>
+                <th>Exam score</th>
+                <th>Total score</th>
+                <th>Grade</th>
+            </tr>
+            </thead>
+            <tbody class="queryresult">
+            </tbody>
+            <tfoot>
+                <tr>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+<!-- End 'std Course result' modalbox -->
+
+<!------ End For the Student Profile page ------>

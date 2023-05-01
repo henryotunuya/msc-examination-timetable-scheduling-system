@@ -1,0 +1,97 @@
+.wrapper{
+			grid-template-rows: auto 65vh auto 30vh ;
+			grid-template-areas: "header header header"
+								 "contentx contentx contentx"
+								 "contentx contentx contentx"
+								 "footer footer footer";
+}
+.reset_wrapper{
+	margin: 0 auto;
+	width: 77%;
+	padding: 1.5em;
+	background-color: rgba(33,68,120,.2);
+	border-top: .5em solid rgb(33,68,120);
+	text-align: center;
+}
+#reset_box{
+	margin:0 auto;
+	margin-top: 2em;
+	background-color: rgba(255,255,255,1);
+	width:35%;
+	height:auto;
+	padding:3em 1em 3em 1em;
+	color: rgb(44,44,160);
+	font-size:1.2em;
+	font-family: Tahoma, Arial, Forte, Cooper-Black, Stencil, Arial-Black;
+	border-radius:10px;
+	box-shadow:2px 3px 5px #222;
+	border-top:5px rgb(220,0,0) solid;
+}
+.input-field{
+	height:1.5em;
+	width:80%;
+	border:none;
+	border-bottom:1px solid #56c829ff;
+	background-color:transparent;
+	color: #000;
+	letter-spacing:2px;
+	font-size:1em;
+	font-family: Tahoma;
+	margin-top:1em;
+}
+.bttn{
+	box-shadow:1px 1px 5px #444;
+	padding:0.7em;
+	font-size:1em;
+	color:#000;
+	margin: auto;
+	margin-top:.8em;
+	background-color:rgba(10,200,100,1);
+	cursor:pointer;
+	border:none;
+}
+.bttn:hover{
+	background-color:rgba(10,200,100,.7);
+}
+.in-take-100p{
+    width: 100%;
+}
+.in-take-80p{
+    width: 80%;
+}
+.in-take-70p{
+    width: 70%;
+}
+.in-take-50p{
+    width: 50%;
+}
+.in-take-30p{
+    width: 30%;
+}
+.in-take-10p{
+    width: 10%;
+}
+label{
+	display:inline-block;	
+	width:1.5em;
+	font-size:1.5em;
+	color: #d11;
+}
+label[for='newpassword']{
+	color: #fff;
+	width:auto;
+	font-size:1em;
+	padding: .3em;
+	background-color: rgba(150,20,20,1);
+	border-radius: .4em;
+	margin-top: 2em;
+	font-family: Arial Black;
+}
+.info_2{
+	margin-top: 1.2em;
+	float: right;
+	font-size: .7em;	
+}
+.info_2 a{
+	text-decoration: none;
+}

@@ -1,0 +1,19 @@
+extends layout
+
+block append styles
+    link(rel='stylesheet',type='text/css', href='/stylesheets/loginStyle.css')
+
+block content
+    main(class='contentx')
+        p(class='heading lg') #{heading}
+        div(id='login-box')
+            p(class='info') #{info}
+            p(class='error_fb') #{errormsg}
+            form(method='POST' action= action)
+                include ../public/login_b.html
+            include ../public/footer.html
+
+block javascripts
+    script(src='/javascripts/script.js')
+
+    

@@ -1,0 +1,24 @@
+extends layout
+
+block append styles
+    link(rel='stylesheet', type='text/css', href='/stylesheets/studentprofileStyle.css')
+    link(rel='stylesheet', type='text/css', href='/stylesheets/adminStyle.css')
+    script(src='/javascripts/jquery-3.4.1.min.js')
+    
+
+block content
+    main(class="contentx")
+        p(class='heading lg') Welcome #{username}
+            span(class = "logoutlink")
+                a(href = "logout") Logout
+    
+        include ../public/studentprofile_b.html
+    include ../public/footer.html
+    include ../public/modalboxes.html
+
+block javascripts
+    script(src='/javascripts/adminscript.js')
+    script(src='/javascripts/modalscript.js')
+    script(src='/javascripts/asynccalls_stdprofile.js')
+    script(src='/javascripts/script.js')
+    

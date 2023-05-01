@@ -1,0 +1,118 @@
+.wrapper{
+    grid-template-columns: 1fr 1fr 1fr 2fr 2fr;
+    grid-template-rows: auto auto auto 30vh ;
+    grid-template-areas: "header header header header header"
+        "quicknav contentx contentx contentx contentx"
+        "... contentx contentx contentx contentx"
+        "footer footer footer footer footer";
+}
+.contentx{
+    background-color: #1291bd;
+}
+#reg-box{
+    margin:0 auto;
+    margin-top: 2em;
+    background-color: rgba(255,255,255,1);
+    width:80%;
+    height:auto;
+    padding:3em 1em 4em 1em;
+    font-family: Arial ;
+    border-radius:10px;
+    box-shadow:2px 3px 5px #222;
+    border-top:5px rgba(0,0,0,.6) solid;	
+}
+.txtShadow{	
+    text-shadow:#444 1px 1px 5px;
+}
+.info{
+    color: #fff;
+    background-color: rgba(255,0,0,1);
+    padding: .2em;
+    margin-top: 1em;
+}
+
+.input-field{
+    height:1.5em;
+    border:none;
+    border-bottom:1px solid #0b595a;
+    background-color:transparent;
+    letter-spacing:2px;
+    font-size:1em;
+    font-family: Tahoma;
+}
+
+.textarea-height{
+    min-height: 5em;
+}
+.bgcolor-red{
+    background-color: #f45;
+}
+.bgcolor-orange{
+    background-color: #EB8F2D;
+}
+.bgcolor-green{
+    background-color: #a2d979;
+}
+.bgcolor-skyblue{
+    background-color: #04aaff;
+}
+#passport-container{
+    background-color: buttonface;
+    color: green;
+    max-height: 150px;
+    max-width: 170px;
+    float: right;
+    margin-right: 3em;
+}
+.heading-2{
+    margin: 1em 0;
+    background-color: #333;
+    color: #eff8f8;
+    padding: .2em;
+}
+
+/* For the left-side nav */
+.quicknav{
+    grid-area: quicknav;
+    background-color: rgba(120,154,211,.5);
+    padding: 0 1.5em 1.5em 1.5em;
+    top: 0;
+    position: sticky;
+}
+.qSection-link{
+    font-family: Arial;
+    font-size: .8em;	
+}
+.qSection{
+    margin-top: 1em;
+}
+.qSection a{
+    text-decoration: none;
+    color: #75c;
+}
+/*----- Styles the disabling 'forthepds' and 'forthedes' ids ------*/
+.fortheds[disabled='disabled'], .forthedes[disabled='disabled']{
+    cursor: not-allowed;
+    background-color: rgba(130,20,50,.5);
+}
+/*--------------------- END ----------------------------------*/
+
+/*------------ Style for the edit page -------------*/
+.editBox{
+    display: none;
+}
+.alteredfield{
+    background-color: #f45;
+}
+.unalteredfield{
+    background-color: #a2d979;
+}
+.alteredfield:before{
+    content: 'x';
+    display: block;
+}
+.unalteredfield:before{
+    content:   'vsdfdds';
+    display: block;
+}
+/*-------------- END edit page style ---------------*/

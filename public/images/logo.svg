@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="22.131598mm"
+   height="13.804298mm"
+   viewBox="0 0 78.419047 48.912867"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="logo.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1302"
+     inkscape:window-height="746"
+     id="namedview9"
+     showgrid="false"
+     inkscape:zoom="3.7108332"
+     inkscape:cx="30.88644"
+     inkscape:cy="45.353873"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     transform="matrix(0.86256556,0,0,0.86256556,-84.736142,-470.65697)">
+    <rect
+       rx="0"
+       style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:12.60000038;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect8072"
+       width="90.913727"
+       height="56.706261"
+       x="98.237335"
+       y="545.64777"
+       ry="10.622222" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:34.82274246px;line-height:125.99999905%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="109.70949"
+       y="586.30652"
+       id="text8068"
+       sodipodi:linespacing="126%"><tspan
+         id="tspan8070"
+         x="109.70949"
+         y="586.30652"
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:32.59594727px;line-height:125.99999905%;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold Italic'">E<tspan
+   style="font-size:20.37246704px"
+   id="tspan8068">tt</tspan>S</tspan></text>
+  </g>
+</svg>

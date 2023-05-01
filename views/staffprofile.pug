@@ -1,0 +1,20 @@
+extends layout
+
+block append styles
+    link(rel='stylesheet', type='text/css', href='/stylesheets/studentprofileStyle.css')
+    link(rel='stylesheet', type='text/css', href='/stylesheets/adminStyle.css')
+
+block content
+    include ../public/staffprofile_b.html
+    include ../public/footer.html
+    include ../public/modalboxes.html
+
+block javascripts
+    script(src='/javascripts/adminscript.js')
+    script(src='/javascripts/modalscript.js')
+    script(src='/javascripts/jquery-3.4.1.min.js')
+    script(src='/javascripts/asynccalls.js')
+    
+
+
+

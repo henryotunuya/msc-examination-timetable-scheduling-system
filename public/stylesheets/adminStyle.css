@@ -1,0 +1,152 @@
+.wrapper{
+    grid-template-columns: 1fr 1fr 1fr 2fr 2fr;
+    grid-template-rows: auto auto auto 30vh ;
+    grid-template-areas: "header header header header header"
+        "quicknav contentx contentx contentx contentx"
+        "... contentx contentx contentx contentx"
+        "footer footer footer footer footer";
+}
+
+.mgntask_list{
+    margin:0 auto;
+    margin-top: 2em;
+    background-color: rgba(255,255,255,1);
+    width:85%;
+    padding:3em 1em 4em 1em;
+    font-family: Arial ;
+    border-radius:10px;
+    box-shadow:2px 3px 5px #222;
+    border-top:5px rgba(255,0,0,1) solid;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+#mgntask_list_wrapper{
+    display: none;
+}
+.mgntask{
+    width: 18%;
+    height: 8em;
+    background-color: rgba(0,0,0,.5);
+    margin-left: 1em;
+    margin-bottom: 1em;
+    cursor: pointer;
+    padding: .5em;
+    font-size: 1em;
+    text-shadow:#111 1px 1px 5px;
+    color: #fff;
+}
+.mgntask:hover{
+    box-shadow: 1px 2px 4px #111;
+}
+.mgntask:active{
+    background-color: transparent;
+}
+.mgntask a{
+    padding: 0 .1em 5em .1em;
+    text-decoration: none;
+    color: inherit;
+}
+.txtShadow{	
+    text-shadow:#444 1px 1px 5px;
+}
+.info{
+    color: #fff;
+    background-color: rgba(255,0,0,1);
+    padding: .2em;
+    margin-top: 1em;
+}
+
+/* For the left-side nav */
+.quicknav{
+    grid-area: quicknav;
+    background-color: rgba(120,154,211,.5);
+    padding: 0 1.5em 1.5em 1.5em;
+    top: 0;
+    position: sticky;
+}
+.qSection-link{
+    font-family: Arial;
+    font-size: .8em;	
+}
+.qSection{
+    margin-top: 1em;
+}
+.qSection a{
+    text-decoration: none;
+    color: #75c;
+}
+.active_section{
+    background-color: #fff;
+    padding: .1em;
+}
+/*----------------  Color varieties ------------------*/
+.bgc_red{
+    background-color: rgba(255,10,10,.8);
+}
+.bgc_blue{
+    background-color: rgba(10,10,255,.8);
+}
+.bgc_green{
+    background-color: rgba(0,200,0,.8);
+}
+.bgc_orange{
+    background-color: rgba(255,191,12,.8);
+}
+
+/*------------  For the table record  --------------------*/
+tr{
+    font-size:.8em;
+}
+th{
+    background-color: rgba(10,10,10,.8);
+    color: #da2;
+}
+tr td,th{
+    padding:.4em;
+}
+
+tr:nth-last-child(2n){
+    background:rgba(120,200,110,0.5);
+}
+
+table{	
+    margin: 2em auto;
+    border:1px solid;
+    border-color:#000;
+    border-collapse: collapse;
+}
+
+tr:hover{
+    background:rgba(20,20,100,0.1);
+}
+
+::selection{
+    background-color:gray;
+    color:red;
+}
+
+.recepient_list{
+    margin-top: 1em;
+    float: right;
+    width: 30%;
+    color: #fff;
+    padding: .5em;
+    background-color: rgba(20,20,20,0.3);
+}
+.sms_wrapper{
+    margin: 2em auto;
+    width: 40em;
+    padding: 1.5em;
+    background-color: rgba(33,68,120,.2);
+    border-top: .5em solid rgb(33,68,120);
+}
+#option_heading{
+    position: absolute;
+    margin: .6em 0 2em 5em;
+    padding: .2em;
+    width: 68%;
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    text-shadow: #000 1px 2px;
+}

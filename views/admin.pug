@@ -1,0 +1,21 @@
+extends layout
+
+block append styles
+    link(rel='stylesheet',type='text/css', href='/stylesheets/adminStyle.css')
+    link(rel='stylesheet',type='text/css', href='/stylesheets/smsStyle.css')
+
+block content
+    main(class="contentx")
+        p(class='heading lg') Welcome admin
+            span(class = "logoutlink")
+                a(href = "logout") Logout
+        include ../public/admin_b.html
+    include ../public/footer.html
+    include ../public/modalboxes.html
+
+block javascripts
+    script(src='/javascripts/adminscript.js')
+    script(src='/javascripts/modalscript.js')
+    script(src='/javascripts/jquery-3.4.1.min.js')
+    script(src='/javascripts/asynccalls.js')
+    script(src='/javascripts/script.js')

@@ -1,0 +1,64 @@
+
+#login-box{
+    margin:0 auto;
+    background-color: rgba(33,68,120,.2);
+    width:70%;
+    height:auto;
+    padding:2em 1em 2em 1em;
+    color:#56c829ff;
+    font-size:1em;
+    font-family: Arial, Forte, Cooper-Black, Tahoma, Stencil, Arial-Black;
+    border-radius:10px;
+    box-shadow:2px 3px 5px #222;
+    border-top:5px rgba(0,0,0,.6) solid;	
+}
+
+.bttn{
+    box-shadow:1px 1px 5px #444;
+    padding:0.7em;
+    font-size:1em;
+    color:#fff;
+    margin: auto;
+    margin-top:2em;
+    background-color:rgba(10,200,100,1);
+    cursor:pointer;
+    border:none;
+}
+.bttn:hover{
+    background-color:rgba(10,200,100,.7);
+}
+.input-field{
+    height:1.5em;
+    border:none;
+    border-bottom:1px solid #56c829ff;
+    background-color:transparent;
+    color: #000;
+    letter-spacing:2px;
+    font-size:1em;
+    font-family: Tahoma;
+    margin-top:1em;
+}
+.input-field::placeholder{
+    color: #fff;
+}
+.input-field:focus{
+    border:none;
+}
+.txtShadow{	
+    text-shadow:#444 1px 1px 5px;
+}
+.info{
+    color: #fff;
+    background-color: rgba(0,0,0,.5);
+    padding: .1em;
+}
+.input-text{
+    font-size:1em;
+    font-family: 'Arial';
+    color: #fff;
+    margin-left: 2em;
+    padding: .3em;
+    background-color: rgba(0,0,0,.7);
+    border-radius: .4em;
+    margin-top: 2em;
+}
